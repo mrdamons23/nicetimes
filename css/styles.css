@@ -66,19 +66,24 @@ header {
   margin: 30px auto -20px auto;
   max-width: 900px;
   box-shadow: 0 0 30px rgba(255,255,255,0.2);
+  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .logo img {
   width: 400px;
   border-radius: 50%;
   /* box-shadow removed to eliminate the circular effect */
+  display: block;
+  margin: 0 auto;
 }
 
 .logo {
   /* Remove any background blur or backdrop-filter if present */
   background: none;
   backdrop-filter: none;
-  margin-top: 40px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 h1 {
@@ -216,6 +221,7 @@ h2 {
   border-radius: 0;
   max-width: 1200px;
   margin: 0 auto 40px auto;
+  margin-top: 10px;
 }
 
 .hero-blur {
@@ -295,4 +301,21 @@ footer {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: contain;
+    background-position: top center;
+  }
+  .logo {
+    margin-top: 20px;
+  }
+  header {
+    margin-bottom: 0px !important;
+    padding-bottom: 10px !important;
+  }
+  .hero {
+    margin-top: 10px !important;
+  }
 }
