@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nice Times - Sweet Gummies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Fredoka:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Nice Times Logo">
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-blur">
+        <p class="hero-pov"><strong>POV:</strong> The candy you've been waiting for just arrived... fashionably late, and ready to party!</p>
+        <p>Welcome to a world where every delicious gummy is a tiny celebration. At Nice Times, we believe in creating joyful moments through our vibrant treats, crafted with love to bring a smile to your face. Get ready to unwrap the fun – the good times are finally here!</p>
+      </div>
+    </section>
+
+    <!-- FLAVORS SECTION -->
+    <section class="flavors">
+      <h2>Discover the Flavours</h2>
+      <div class="flavor-grid">
+        <div class="flavor-card">
+          <div class="video-wrapper">
+            <img src="cash splash.png" alt="Cash Splash" />
+          </div>
+          <div class="flavor-name">Cash Splash</div>
+          <div class="flavor-description">Cream Soda x Vanilla Soft Serve</div>
+          <div class="flavor-story">Get ready to make it rain… flavor! Cash Splash is your ticket to a creamy, dreamy, vanilla-soda paradise. It’s like finding a treasure chest of pure deliciousness!</div>
+        </div>
+        <div class="flavor-card">
+          <div class="video-wrapper">
+            <img src="happymoments.png" alt="Happy Moments" />
+          </div>
+          <div class="flavor-name">Happy Moments</div>
+          <div class="flavor-description">Pineapple x Mango</div>
+          <div class="flavor-story">Warning: May cause spontaneous smiles! Happy Moments is your passport to an instant mood lift, blending the tangy zest of pineapple with the luscious sweetness of mango. Happiness, delivered!</div>
+        </div>
+        <div class="flavor-card">
+          <div class="video-wrapper">
+            <img src="sweetescape.png" alt="Sweet Escape" />
+          </div>
+          <div class="flavor-name">Sweet Escape</div>
+          <div class="flavor-description">Strawberry x Lemonade</div>
+          <div class="flavor-story">When life gives you lemons, add strawberries and call it a Sweet Escape! This is the ultimate pick-me-up, a tangy-sweet symphony that's guaranteed to brighten your day and refresh your soul.</div>
+        </div>
+        <div class="flavor-card">
+          <div class="video-wrapper">
+            <img src="tropicalvacation.png" alt="Tropical Vacation" />
+          </div>
+          <div class="flavor-name">Tropical Vacation</div>
+          <div class="flavor-description">Watermelon x Cola</div>
+          <div class="flavor-story">No plane ticket needed for this paradise! Tropical Vacation is your express lane to a sun-soaked getaway, where the refreshing cool of watermelon meets the classic kick of cola. Pure island vibes!</div>
+        </div>
+        <div class="flavor-card">
+          <div class="video-wrapper">
+            <img src="bubble party.png" alt="Bubble Party" />
+          </div>
+          <div class="flavor-name">Bubble Party</div>
+          <div class="flavor-description">Orange x Bubblegum</div>
+          <div class="flavor-story">Ding-dong, the fun's here!  Bubble Party is an absolute blast of citrusy sunshine crashing into a sweet, chewy, bubblegum dream! It’s like a flavor confetti cannon exploding in your mouth – pure party chaos, in the best way</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-pack">
+        <h2>Order Your Fun Pack!</h2>
+        <p>Get ready to indulge in our delicious gummies! Each fun pack is filled with a variety of flavors to satisfy your sweet tooth.</p>
+        <div class="order-details">
+            <p>Price: R20 per pack</p>
+            <button class="order-button">Order Now</button>
+        </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Nice Times. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const videos = document.querySelectorAll('video');
+    videos.forEach(video => {
+      video.playbackRate = 0.5; // Adjust speed to play for 5 seconds
+      video.addEventListener('mouseover', () => video.play());
+      video.addEventListener('mouseout', () => video.pause());
+    });
+  </script>
+
+  <div class="sugar">
+    <div style="left: 5%; width: 15px; height: 15px; animation-delay: 0s;"></div>
+    <div style="left: 15%; width: 10px; height: 10px; animation-delay: 1s;"></div>
+    <div style="left: 25%; width: 12px; height: 12px; animation-delay: 2s;"></div>
+    <div style="left: 35%; width: 8px; height: 8px; animation-delay: 3s;"></div>
+    <div style="left: 45%; width: 10px; height: 10px; animation-delay: 4s;"></div>
+    <div style="left: 55%; width: 15px; height: 15px; animation-delay: 5s;"></div>
+    <div style="left: 65%; width: 12px; height: 12px; animation-delay: 6s;"></div>
+    <div style="left: 75%; width: 8px; height: 8px; animation-delay: 7s;"></div>
+    <div style="left: 85%; width: 10px; height: 10px; animation-delay: 8s;"></div>
+    <div style="left: 95%; width: 15px; height: 15px; animation-delay: 9s;"></div>
+  </div>
+
+</body>
+</html>
+
